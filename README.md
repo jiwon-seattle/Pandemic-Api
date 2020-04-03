@@ -30,6 +30,7 @@ Improvement Opportunities:
 2. A user is utilize Pandemic API with full CRUD functionality   
 
 Parking Lot:
+- Overall cases for each country
 - MVC implementation 
 - Identity
 - enhanced API authorizaiton
