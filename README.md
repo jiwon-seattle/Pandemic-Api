@@ -16,7 +16,14 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-orange.svg)](https://lbesson.mit-license.org/)
 
 ---
-## 1. User Flow
+
+## 1. Pandemic API
+
+The API contains Country and Status with one to one relationship
+Country has CountryId, CountryName, Latitute, Longtitude
+Status has StatusId, CountryId, Cases : Count number for people who is confirmed, Confirmed for true or false, and Date
+
+## 2. User Flow
 
 1. A user is able to track pandemic per country
 2. A user is able to track pandemic status of specific country
@@ -27,7 +34,7 @@ Parking Lot/Improvement Opportunities:
 - Identity
 - enhanced API authorizaiton
 
-## 2. Development
+## 3. Development
 ### Tech stack:
 + [.NET CORE](https://dotnet.microsoft.com/download/dotnet-core/) for package management (represents for C#, Entity Framework and Razor) 
 + [MySQL](https://dev.mysql.com/downloads/file/?id=484919) 
@@ -49,11 +56,11 @@ Now, it will automatically open http://localhost:5000 and API is available on Po
 
 You might encounter a MySql database related errors on initial loading since this application needs a specific data route to fetch data.
 
-## 3. Known Bugs
+## 4. Known Bugs
 
 There are no known bug at this moment
 
-## 4. Support and contact details
+## 5. Support and contact details
 
 Any feedback is appreciated! Please contact at email: jiwon1.han@gmail.com
 
