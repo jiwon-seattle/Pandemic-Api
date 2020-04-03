@@ -16,7 +16,7 @@
 
 The API contains Country and Status with one to one relationship
 Country has CountryId, CountryName, Latitute, Longtitude
-Status has StatusId, CountryId, Cases : Count number for people who is confirmed, Confirmed for true or false, and Date
+Status has StatusId, CountryId, Cases(Count number for people who affected from pandemic), Confirmed for true or false, and Date
 
 Improvement Opportunities:
 - Used package Microsoft.EntityFrameworkCore.Proxies to enable lazy loading
