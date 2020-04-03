@@ -50,7 +50,7 @@ Parking Lot:
   # After successfull pkg installtion
   $ dotnet run
 ```
-Now, it will automatically open http://localhost:5000 and API is available on + [Postman](https://www.postman.com/) or + [Swagger UI](localhost:5000/swagger)
+Now, it will automatically open http://localhost:5000 and API is available on [Postman](https://www.postman.com/) or [Swagger UI](localhost:5000/swagger)
 
 You might encounter a MySql database related errors on initial loading since this application needs a specific data route to fetch data.
 
