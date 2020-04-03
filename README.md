@@ -23,13 +23,17 @@ The API contains Country and Status with one to one relationship
 Country has CountryId, CountryName, Latitute, Longtitude
 Status has StatusId, CountryId, Cases : Count number for people who is confirmed, Confirmed for true or false, and Date
 
+Improvement Opportunities:
+- Used package Microsoft.EntityFrameworkCore.Proxies to enable lazy loading
+- Stated addJason option in Startup.cs to ignore cycles that it finds in the object graph and to generate JSON response properly
+
 ## 2. User Flow
 
 1. A user is able to track pandemic per country
 2. A user is able to track pandemic status of specific country
 2. A user is utilize Pandemic API with full CRUD functionality   
 
-Parking Lot/Improvement Opportunities:
+Parking Lot:
 - MVC implementation 
 - Identity
 - enhanced API authorizaiton
