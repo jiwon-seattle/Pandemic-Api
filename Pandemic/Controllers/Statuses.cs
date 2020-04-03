@@ -23,9 +23,14 @@ namespace Pandemic.Controllers
 
         // GET values
         [HttpGet]
-        public ActionResult<IEnumerable<Status>> Get()
+        public ActionResult<IEnumerable<Status>> Get(string country)
         {
             var query = _db.Statuses.Include(entry => entry.Country).AsQueryable();
+
+            if (country != null)
+            {
+                query = query.Where(entry => entry.Country.CountryName == country);
+            }
             return query.ToList();
         }
 

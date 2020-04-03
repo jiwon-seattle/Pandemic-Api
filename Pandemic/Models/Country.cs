@@ -11,7 +11,6 @@ namespace Pandemic.Models
         public string CountryName { get; set; }
         public int Lat { get; set; }
         public int Lon { get; set; }
-        // [JsonIgnore]
         public virtual ICollection<Status> Statuses {get; set;}
 
         public Country()

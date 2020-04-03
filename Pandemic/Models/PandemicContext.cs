@@ -13,10 +13,10 @@ namespace Pandemic.Models
         {
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {   
-            optionsBuilder.UseLazyLoadingProxies();
-        }
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {   
+        //     optionsBuilder.UseLazyLoadingProxies();
+        // }
 
         public DbSet<Country> Countries { get; set; }
         public DbSet<Status> Statuses { get; set; }
