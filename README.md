@@ -26,6 +26,7 @@ Status has StatusId, CountryId, Cases : Count number for people who is confirmed
 Improvement Opportunities:
 - Used package Microsoft.EntityFrameworkCore.Proxies to enable lazy loading
 - Stated addJason option in Startup.cs to ignore cycles that it finds in the object graph and to generate JSON response properly
+- Used package package Swashbuckle.AspNetCoredescribes for Swagger that describes the capabilities of the API and how to access it with HTTP
 
 ## 2. User Flow
 
@@ -45,18 +46,19 @@ Parking Lot:
 
 ### To run dev mode locally:
 ```bash
-  $ git clone https://github.com/jiwon-seattle/Kanban.Solution.git
+  $ git clone https://github.com/jiwon-seattle/Pandemic-Api.git
   $ cd Pandemic
   $ dotnet add package Microsoft.EntityFrameworkCore -v 2.2.0
   $ dotnet add package Pomelo.EntityFrameworkCore.MySql -v 2.2.0
   $ dotnet add package Microsoft.EntityFrameworkCore.Proxies
+  $ dotnet add package --version 5.3.1 Swashbuckle.AspNetCore
   $ dotnet build
   $ dotnet ef migrations add MigrationName
   $ dotnet ef database update  
   # After successfull pkg installtion
   $ dotnet run
 ```
-Now, it will automatically open http://localhost:5000 and API is available on Postman or Swagger
+Now, it will automatically open http://localhost:5000 and API is available on [Postman](https://www.postman.com/) or [Swagger UI](localhost:5000/swagger)
 
 You might encounter a MySql database related errors on initial loading since this application needs a specific data route to fetch data.
 
