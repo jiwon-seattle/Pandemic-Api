@@ -14,14 +14,14 @@
 
 ## 1. Pandemic API
 
-The API contains Country and Status with one to one relationship
+The API contains Country and Status with one to many relationship
 - Country has CountryId, CountryName, Latitute, Longtitude
 - Status has StatusId, CountryId, Cases(Count number for people who affected from pandemic), Confirmed for true or false, and Date
 
 Improvement Opportunities:
 - Used package Microsoft.EntityFrameworkCore.Proxies to enable lazy loading
 - Stated addJason option in Startup.cs to ignore cycles that it finds in the object graph and to generate JSON response properly
-- Used package Swashbuckle.AspNetCoredescribes for Swagger that describes the capabilities of the API and how to access it with HTTP
+- Used package Swashbuckle.AspNetCore for Swagger that describes the capabilities of the API and how to access it with HTTP
 
 ## 2. User Flow
 
